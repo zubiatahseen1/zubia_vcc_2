@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html Assignment 4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="page page--biophilia font--raleway">
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img src="assets/images/logo.png" alt="logo of a cloud with a leaf in it" class="header__logo-image">
+    </a>
+
+    <nav class="header__nav">
+      <a href="index.html" title="home" class="nav__link">HOME</a>
+      <a href="services.html" title="services" class="nav__link">SERVICES</a>
+      <a href="biophilia.html" class="nav__link">WHY BIOPHILIC DESIGN</a>
+      <a href="contact.html" title="contact" class="nav__link">CONTACT</a>
+    </nav>
+
+  <!-- Mobile navigation -->
+
+      <nav class="nav-mobile">
+        <a href="index.html" title="home" class="nav-mobile__link">HOME</a>
+        <a href="services.html" title="services" class="nav-mobile__link">SERVICES</a>
+        <a href="biophilia.html" class="nav-mobile__link">WHY BIOPHILIC DESIGN</a>
+        <a href="contact.html" title="contact" class="nav-mobile__link">CONTACT</a>
+      </nav>
+
+  <!-- HAMBURGER ICON -->
+
+    <div class="header__toggle" onclick="toggleMenu();">
+      <div class="header__toggle-icon"></div>
+      <div class="header__toggle-icon"></div>
+      <div class="header__toggle-icon"></div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE GRID / CONTAINER ===== -->
+  <div class="page-grid--biophilia">
+
+    <!-- ===== PAGE HEADING ===== -->
+    <section class="biophilic-header">
+      <h1>WHAT IS BIOPHILIA</h1>
+    </section>
+
+    <!-- ===== INTRO SECTION ===== -->
+    <section class="biophilic-intro__image-wrapper">
+      <img src="assets/images/jungle.png" alt="lush green forest">
+    </section>
+    <section class="biophilic-intro__content">
+      <h1>WHAT IS BIOPHILIC DESIGN</h1>
+      <p>Biophilic design is an approach to architecture and interiors that seeks to reconnect people with nature through the built environment. It incorporates natural elements such as light, greenery, textures, and organic materials to create spaces that feel alive, calming, and restorative. By integrating nature into design—whether through living plants, natural patterns, or earthy color palettes—biophilic design enhances well-being, reduces stress, and promotes a deeper sense of harmony between humans and their surroundings.</p>
+    </section>
+
+    <!-- ===== CONTINUATION SECTIONS ===== -->
+    <!-- Section 1 -->
+    <section class="biophilic-section-1">
+      <img src="assets/images/countryhouse.png" alt="French style farmhouse with green corner">
+    </section>
+    <section class="biophilic-section-1__content">
+      <p>But biophilic design goes beyond simply adding plants to a space—it’s about thoughtfully crafting environments that nurture the human spirit. From maximizing natural light and fresh air to using textures, colors, and patterns inspired by the natural world, every element is chosen to create a seamless connection with nature. Spaces designed with biophilia in mind not only feel inviting and restorative but also support creativity, focus, and overall well-being, making them ideal for both homes and workplaces.</p>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="biophilic-section-2">
+      <img src="assets/images/dense_forest.png" alt="dense amazonian forest" class="biophilic-section-2__image">
+    </section>
+    <section class="biophilic-section-2__content">
+      <h1>WHAT ARE THE BENEFITS OF BIOPHLIC DESIGN</h1>
+      <ul>
+        <li>Reduces Stress and Improves Well-being – Natural elements like plants, water, and sunlight create a calming environment, lowering stress levels and promoting mental health.</li>
+        <li>Enhances Productivity and Focus – Exposure to natural light, views of nature, and organic patterns helps improve concentration, creativity, and efficiency.</li>
+        <li>Boosts Mood and Happiness – Being surrounded by elements inspired by nature creates a sense of joy and contentment.</li>
+        <li>Improves Air Quality and Comfort – Incorporating living plants and natural ventilation can enhance indoor air quality and overall comfort.</li>
+        <li>Encourages Physical Activity – Thoughtful layouts with natural cues can motivate movement and engagement within a space.</li>
+        <li>Strengthens Connection to Nature – Biophilic spaces help people feel more connected to the natural world, which can foster mindfulness and relaxation.</li>
+        <li>Enhances Aesthetic Appeal – Natural textures, colors, and forms create visually appealing and harmonious environments.</li>
+        <li>Supports Healthier Sleep and Circadian Rhythms – Maximizing natural light during the day and reducing artificial lighting disruption at night helps regulate the body’s natural rhythms.</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+     <footer class="footer">
+      <p class="footer__address">Toronto,ON - Vancouver, BC</p>
+      <p class="footer__contact">info@cloudgarden.com 123 456 7619</p>
+      <p class="footer__copyright">© 2025 CloudGarden Inc.</p>
+      <div class="footer__social">
+        <a href="#" title="dragonbit">
+            <img src="assets/images/dragonbit-64.png" alt="dragonbit">
+        </a>
+        <a href="#" title="twitter">
+            <img src="assets/images/twitter-64.png" alt="twitter">
+        </a>
+        <a href="#" title="linkedIn">
+          <img src="assets/images/linkedin-64.png" alt="linkedIn">
+        </a>
+      </div>
+    </footer>
+
+<!-- ===== SCRIPTS ===== -->
+  <script src="js/jquery.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

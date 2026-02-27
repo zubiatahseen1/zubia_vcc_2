@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html Assignment 4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="font--raleway">
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img src="assets/images/logo.png" alt="logo of a cloud with a leaf in it" class="header__logo-image">
+    </a>
+
+    <nav class="header__nav">
+      <a href="index.html" title="home" class="nav__link">HOME</a>
+      <a href="services.html" title="services" class="nav__link">SERVICES</a>
+      <a href="biophilia.html" class="nav__link">WHY BIOPHILIC DESIGN</a>
+      <a href="contact.html" title="contact" class="nav__link">CONTACT</a>
+    </nav>
+
+  <!-- Mobile navigation -->
+
+      <nav class="nav-mobile">
+        <a href="index.html" title="home" class="nav-mobile__link">HOME</a>
+        <a href="services.html" title="services" class="nav-mobile__link">SERVICES</a>
+        <a href="biophilia.html" class="nav-mobile__link">WHY BIOPHILIC DESIGN</a>
+        <a href="contact.html" title="contact" class="nav-mobile__link">CONTACT</a>
+      </nav>
+
+  <!-- HAMBURGER ICON -->
+
+    <div class="header__toggle" onclick="toggleMenu();">
+      <div class="header__toggle-icon"></div>
+      <div class="header__toggle-icon"></div>
+      <div class="header__toggle-icon"></div>
+    </div>
+  </header>
+
+  <div class="contact">
+    <h1 class="contact__title">CONTACT US FOR SUSTAINABLE INTERIOR DESIGN</h1>
+    <p class="contact__text">Interested in learning more about our work or booking a consultation?
+    Get in touch with us below.</p>
+  </div>
+  <div class="card">
+    <form id="contactForm" novalidate>
+    <div>
+      <label for="email">Email</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        inputmode="email"
+        placeholder="Your email goes here"
+        required
+        aria-describedby="emailHelp">
+        <div id="emailHelp" class="helper">We’ll only use your email to reply to your message.</div>
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Type your message here"
+        rows="6"
+        required
+      ></textarea>
+    </div>
+    <div class="row" style="align-items:center;">
+      <div style="flex:1">
+        <div class="helper" id="formHint">All fields are required.</div>
+      </div>
+      <div>
+        <button class="button" type="submit" id="sendBtn">Send</button>
+      </div>
+    </div>
+    <div id="success" class="success" role="status" aria-live="polite"></div>
+        </form>
+  </div>
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer class="footer">
+      <p class="footer__address">Toronto,ON - Vancouver, BC</p>
+      <p class="footer__contact">info@cloudgarden.com 123 456 7619</p>
+      <p class="footer__copyright">© 2025 CloudGarden Inc.</p>
+      <div class="footer__social">
+        <a href="#" title="dragonbit">
+            <img src="assets/images/dragonbit-64.png" alt="dragonbit">
+        </a>
+        <a href="#" title="twitter">
+            <img src="assets/images/twitter-64.png" alt="twitter">
+        </a>
+        <a href="#" title="linkedIn">
+          <img src="assets/images/linkedin-64.png" alt="linkedIn">
+        </a>
+      </div>
+    </footer>
+<!-- ===== SCRIPTS ===== -->
+  <script src="js/jquery.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
