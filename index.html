@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html Assignment 4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="page page--home font--raleway">
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img src="assets/images/logo.png" alt="logo of a cloud with a leaf in it" class="header__logo-image">
+    </a>
+
+  <!-- Mobile navigation -->
+
+      <nav class="nav-mobile">
+        <a href="index.html" title="home" class="nav-mobile__link">HOME</a>
+        <a href="services.html" title="services" class="nav-mobile__link">SERVICES</a>
+        <a href="biophilia.html" class="nav-mobile__link">WHY BIOPHILIC DESIGN</a>
+        <a href="contact.html" title="contact" class="nav-mobile__link">CONTACT</a>
+      </nav>
+
+  <!-- HAMBURGER ICON -->
+
+    <div class="header__toggle" onclick="toggleMenu();">
+      <div class="header__toggle-icon"></div>
+      <div class="header__toggle-icon"></div>
+      <div class="header__toggle-icon"></div>
+    </div>
+  </header>
+
+  <div class="page-grid">
+
+  <!-- ===== HERO SECTION ===== -->
+
+    <section class="hero"></section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+
+    <section class="about">
+      <div class="section__content">
+        <h1 class="about__title">ABOUT US</h1>
+        <p class="about__text">Founded in 2020, CloudGarden Interiors is a design firm dedicated to bringing the outdoors in through the art of biophilic design. We create interiors that celebrate the natural world—spaces filled with light, texture, and living elements that nurture both body and mind.
+        Our team of 25 passionate designers and plant experts crafts environments where wellness, creativity, and sustainability thrive together. From bespoke plant installations to holistic interior transformations, we blend natural aesthetics with modern functionality to create timeless, restorative spaces. At CloudGarden Interiors, we help you live where nature breathes—surrounded by beauty, balance, and life.</p>
+      </div>
+    </section>
+
+ <!-- ===== SPECIFICATIONS SECTION ===== -->
+
+    <section class="specifications__image-wrapper">
+      <img src="assets/images/restaurant.png" alt="a biophilic restaurant" class="specifications__image">
+    </section>
+    <section class="specifications__content">
+      <h1 class="specifications__title">SPECIFICATIONS</h1>
+      <P class="specifications__text"> CloudGarden Interiors, every project begins with you. We believe that the most inspiring spaces are born from collaboration — where your vision, lifestyle, and needs guide every design decision. From the first consultation to the final touches, our designers work closely with you to understand how you live, work, and connect with your environment.
+      </P>
+      <p>Together, we’ll explore materials, textures, and finishes that reflect your personality while maintaining the calm balance of nature. Our team will guide you through every step — from selecting the right plants and natural elements to choosing color palettes, lighting, and furnishings that complement your space.
+      </p>
+      <p>We don’t just design interiors; we craft experiences. Every detail is thoughtfully specified to ensure your project feels cohesive, functional, and authentically you. At CloudGarden Interiors, we’ll work with you to create a space where nature and design meet in perfect harmony.
+      </p>
+    </section>
+
+  <!-- ===== FOOTER ===== -->
+
+    <footer class="footer">
+      <p class="footer__address">Toronto,ON - Vancouver, BC</p>
+      <p class="footer__contact">info@cloudgarden.com 123 456 7619</p>
+      <p class="footer__copyright">© 2025 CloudGarden Inc.</p>
+      <div class="footer__social">
+        <a href="#" title="dragonbit">
+            <img src="assets/images/dragonbit-64.png" alt="dragonbit">
+        </a>
+        <a href="#" title="twitter">
+            <img src="assets/images/twitter-64.png" alt="twitter">
+        </a>
+        <a href="#" title="linkedIn">
+          <img src="assets/images/linkedin-64.png" alt="linkedIn">
+        </a>
+      </div>
+    </footer>
+  </div>
+
+ <!-- ===== SCRIPTS ===== -->
+
+  <script src="js/jquery.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

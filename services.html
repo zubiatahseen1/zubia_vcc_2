@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html_assignment_4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class=" page page--services font--raleway">
+ <header class="header">
+    <a class="header__logo" href="index.html">
+      <img src="assets/images/logo.png" alt="logo of a cloud with a leaf in it" class="header__logo-image">
+    </a>
+
+    <nav class="header__nav">
+      <a href="index.html" title="home" class="nav__link">HOME</a>
+      <a href="services.html" title="services" class="nav__link">SERVICES</a>
+      <a href="biophilia.html" class="nav__link">WHY BIOPHILIC DESIGN</a>
+      <a href="contact.html" title="contact" class="nav__link">CONTACT</a>
+    </nav>
+
+  <!-- Mobile navigation -->
+
+      <nav class="nav-mobile">
+        <a href="index.html" title="home" class="nav-mobile__link">HOME</a>
+        <a href="services.html" title="services" class="nav-mobile__link">SERVICES</a>
+        <a href="biophilia.html" class="nav-mobile__link">WHY BIOPHILIC DESIGN</a>
+        <a href="contact.html" title="contact" class="nav-mobile__link">CONTACT</a>
+      </nav>
+
+  <!-- HAMBURGER ICON -->
+
+    <div class="header__toggle" onclick="toggleMenu();">
+      <div class="header__toggle-icon"></div>
+      <div class="header__toggle-icon"></div>
+      <div class="header__toggle-icon"></div>
+    </div>
+  </header>
+
+  <!-- ===== OUTER GRID IS FOR CENTERING THE ENTIRE PAGE ===== -->
+  <div class="page-wrapper page-wrapper--services">
+
+    <!-- ===== INNER GRID IS FOR Page Sections ===== -->
+    <div class="page-grid--services">
+
+      <!-- ===== SERVICES HEADING ===== -->
+      <section class="services-header">SERVICES</section>
+
+      <!-- ===== SERVICE BLOCK 1 ===== -->
+      <section class="service1__image-wrapper">
+          <img src="assets/images/biophlic_office.png" alt="biophilic office interior" class="service__image">
+      </section>
+      <section class="service1__content">
+        <h1 class="service1__title">BIOPHILIC PRODUCT SPECIFICATION</h1>
+        <P class="service1__text">We help designers and clients select locally sourced, environmentally responsible furniture, finishes, and biophilic elements. Our services cover everything from services-item-rightery and planters (custom and standard) to guidance on integrating natural patterns, light, and airflow.
+        </P>
+      </section>
+
+       <!-- ===== SERVICE BLOCK 2 ===== -->
+      <section class="service2__image-wrapper">
+        <img src="assets/images/biophilic_room.png" alt="biophilic living room interior" class="service__image">
+      </section>
+
+      <section class="service2__content">
+          <h1 class="service2__title">BIOPHILIC INTERIOR DESIGN SERVICES</h1>
+          <p class="service2__text">We bring together a multidisciplinary biophilic design team—comprising interior designers, horticultural engineers, scientists, and project managers—who collaborate with you to reintroduce nature into your living, work, and social spaces, allowing everyone to experience the benefits of natural elements.</p>
+      </section>
+
+      <!-- ===== COLLABORATION SECTION ===== -->
+      <section class="collaboration">
+          <h1 class="collaboration__title">LET'S COLLABORATE</h1>
+          <p class="collaboration__text">Whether you work in the industry or are tackling your own renovation, we’re happy to guide you in choosing products that make your space truly biophilic.</p>
+          <a href="contact.html" class="collaboration__cta"><button class="button quote__button" >GET IN TOUCH FOR AN INTERIOR DESIGN CONSULTATION QUOTE!</button></a>
+      </section>
+
+      <!-- ===== TEAM IMAGE SECTION ===== -->
+      <section class="team__image">
+          <img src="assets/images/team.png" alt="interior designers planning" class="team__image-img">
+      </section>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="services__footer">
+        <p>Toronto,ON - Vancouver, BC</p>
+        <p>info@cloudgarden.com 123 456 7619</p>
+        <p class="footer__copyright">© 2025 CloudGarden Inc.</p>
+        <div id="social">
+          <a href="#" title="dragonbit">
+            <img src="assets/images/dragonbit-64.png" alt="dragonbit">
+          </a>
+          <a href="#" title="twitter">
+            <img src="assets/images/twitter-64.png" alt="twitter">
+          </a>
+          <a href="#" title="linkedIn">
+            <img src="assets/images/linkedin-64.png" alt="linkedIn">
+          </a>
+        </div>
+      </footer>
+    </div> <!-- END OF INNER PAGE GRID -->
+  </div> <!-- END OF OUTER PAGE WRAPPER -->
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="js/jquery.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

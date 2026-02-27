@@ -1,0 +1,449 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+.font--raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1 {
+font-size: 1.8rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background: #000; */
+}
+
+.button {
+  appearance:none;
+  border:0;
+  background:#3e3a3a;
+  color:#eae0e0;
+  padding:12px 18px;
+  border-radius:1rem;
+  font-weight:600;
+  word-spacing: .1rem;
+  cursor:pointer;
+  font-size:.6rem;
+  box-shadow: 0 6px 16px rgba(43,122,120,0.18);
+  transition:transform .08s ease, box-shadow .12s ease, opacity .12s;
+}
+
+.page {
+  font-size: 16px;
+  color: #424242;
+  line-height: 1.6;
+}
+.header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header__logo-image {
+  width: 60px;
+}
+
+
+.nav-mobile {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: -300px;
+  background: rgb(255, 255, 255, 0.8);
+  width: 300px;
+  height: 100vh;
+  text-align: right;
+  padding-top: 100px;
+  padding-right: 25px;
+}
+
+.nav-mobile > a {
+  display: block;
+  text-decoration: none;
+  color: #424242;
+  font-size: 1.2em;
+  font-weight: 800;
+  margin: 5px 0;
+}
+
+.nav-mobile > a:hover {
+  color: rgb(52, 137, 62);
+}
+
+
+.header__toggle {
+  width: 80px;
+  height: 60px;
+  position: fixed;
+  z-index: 9;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.header__toggle-icon {
+  width: 60px;
+  height: 8px;
+  margin: 4px 0;
+  background: #000;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  /* margin: 0 40px; */
+}
+
+h1 {
+  font-weight: 200;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: minmax(150px, auto);
+  grid-template-areas:
+    "her her her her her her her her her her her her"
+    "abt abt abt abt abt abt abt abt abt abt abt abt"
+    "spi spi spi spi spi spi spt spt spt spt spt spt"
+    "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
+}
+
+
+.hero {
+  grid-area: her;
+  height: 600px;
+  background: url('../assets/images/heroBkg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about {
+  grid-area: abt;
+  width: 100%;
+  justify-self: center;
+  background: #fff;
+  padding: 170px 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.section__content {
+  width: 70%;
+  margin: 0 auto;
+}
+.about__title {
+  margin-bottom: 1.5rem;
+}
+
+.specifications__image-wrapper {
+  grid-area: spi;
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 1rem;
+}
+
+.specifications__image{
+  width: 100%;
+  border-radius: 5px;
+}
+
+.specifications__content {
+  grid-area: spt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5rem 0 2rem;
+
+}
+
+
+.footer {
+  grid-area: ftr;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+
+
+
+.page-grid--services {
+  display: grid;
+  grid-template-columns: 1rem min-content min-content 1rem;
+  grid-template-rows: 10rem minmax(250px, auto) minmax(250px, auto) minmax(250px, auto) minmax(250px, auto) minmax(250px, auto);
+  grid-template-areas:
+  "hdng hdng hdng hdng"
+  ". sb1i sb2i ."
+  ". sb1c sb2c ."
+  ". clbr clbr ."
+  ". team team ."
+  "sfoo sfoo sfoo sfoo"
+  ;
+  gap: 1rem;
+}
+
+.services-header {
+  grid-area: hdng;
+  margin-top: 3.5rem;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid rgb(230, 227, 227);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service1__image-wrapper {
+  grid-area: sb1i;
+}
+
+.service1__content {
+  grid-area: sb1c;
+
+}
+
+.service2__image-wrapper {
+  grid-area: sb2i;
+}
+
+.service2__content {
+  grid-area: sb2c;
+}
+
+.collaboration {
+  grid-area: clbr;
+  padding: 5rem;
+  text-align: center;
+}
+
+.collaboration__title {
+  margin-bottom: 1rem;
+}
+
+.quote__button {
+  margin: 4rem 0 3rem 0;
+}
+
+.services__footer {
+  grid-area: sfoo;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  }
+
+.page-grid--biophilia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10rem minmax(250px, auto) minmax(250px, auto);
+  grid-template-areas:
+  "bhdg bhdg"
+  "biiw binc"
+  "bs1c bsc1"
+  "bsc2 bs2c"
+  ;
+}
+
+.biophilic-header {
+  grid-area: bhdg;
+  margin-top: 3.5rem;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid rgb(230, 227, 227);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.biophilic-intro__image-wrapper {
+grid-area: biiw;
+}
+
+.biophilic-intro__content {
+grid-area: binc;
+padding: 3rem;
+}
+
+.biophilic-section-1 {
+grid-area: bsc1;
+}
+
+.biophilic-section-1__content {
+grid-area: bs1c;
+padding: 3rem;
+}
+
+.biophilic-section-2 {
+  grid-area: bsc2;
+}
+.biophilic-section-2__content {
+  grid-area: bs2c;
+  padding: 3rem;
+}
+
+.biophilic-section-2__image {
+
+}
+
+ ul {
+    list-style: disc;
+  }
+
+@media (max-width: 1024px) {
+  .page-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(50px, auto);
+    grid-template-areas:
+      "her her her her her her"
+      "abt abt abt abt abt abt"
+      "spi spi spi spi spi spi"
+      "spt spt spt spt spt spt"
+      "ftr ftr ftr ftr ftr ftr";
+  }
+
+  .specifications__image-wrapper {
+    padding: 0 1rem;
+  }
+
+ .specifications__content{
+    padding: 84px 80px 94px;
+    text-align: center;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1rem min-content 1rem;
+    grid-template-rows: repeat(7, minmax(150px, auto));
+    grid-template-areas:
+    ". hdng ."
+    ". sb1i ."
+    ". sb1c ."
+    ". sb2i ."
+    ". sb2c ."
+    ". clbr ."
+    "team team team"
+    ". sfoo ."
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .page-wrapper--services {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+}
+.team__image {
+  grid-area: team;
+}
+ @media (min-width: 1300px){
+    .header__toggle {
+      visibility: hidden;
+    }
+
+  }
+ @media (max-width: 1300px) {
+    .header__logo-image {
+      width: 60px;
+      position: fixed;
+      top: 15px;
+    }
+
+    .header__nav{
+    visibility: hidden;
+    }
+
+    .hero {
+      margin-top: 3rem;
+    }
+  }
+
+
+
+  .contact{
+    margin: 100px;
+    text-align: center;
+  }
+
+  .contact__title {
+    margin-bottom: 1rem;
+  }
+
+  .card{
+      width:100%;
+      max-width:520px;
+      background:#fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(12,20,30,0.08);
+      padding:28px;
+      box-sizing:border-box;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+  form {
+      display:flex;
+      flex-direction:column;
+      gap: 16px;
+    }
+
+    label{
+      display:block;
+      font-size:0.85rem;
+      margin-bottom:6px;
+      color: #334155;
+    }
+
+    input[type="email"],
+    textarea{
+      width:100%;
+      padding:12px 14px;
+      border:1px solid #e6e9ee;
+      border-radius:10px;
+      font-size:1rem;
+      box-sizing:border-box;
+      background:transparent;
+      resize:vertical;
+      min-height:44px;
+      transition:box-shadow .15s, border-color .15s;
+    }
+
+    input[type="email"]:focus,
+    textarea:focus{
+      outline:none;
+      border-color: #2b7a78;
+      box-shadow: 0 6px 18px rgba(43,122,120,0.12);
+    }
+
+    .row{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
